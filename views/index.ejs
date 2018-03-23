@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head><title>hello world, in hypertext!</title></head>
+<body><h1>hi, heads-or-tails?</h1>
+asdf
+<div>
+    <!-- loop over blog posts and render them -->
+    <% posts.forEach((post) => { %>
+    <a href="/post/<%= post.id %>">
+        <h4><%= post.title %></h4>
+        <p><%= post.author %></p>
+    </a>
+    <% }) %>
+</div>
+
+</body>
+</html>
