@@ -1,6 +1,4 @@
-//SyntaxError: Unexpected token import
-//import {Model} from "./model";
-var model = require('model');
+var model = require('./model');
 var express = require('express');
 
 app = express();
@@ -16,4 +14,5 @@ model.date = "1q2qwe24";
 
 app.listen(3000, function () {
   console.log('example app is listening on port 3000');
+  console.log(model);
 });

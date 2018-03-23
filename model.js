@@ -1,12 +1,14 @@
-export function Model () {
+module.exports = {
 
-	this.date = "";
-	this.category= "";
-	this.employeeName= "";
-	this.employeeAddress= "";
-	this.expenseDescription= "";
-	this.preTaxAmount= "";
-	this.taxName= "";
-	this.taxAmount= "";
+	model: function() {
+		this.date = "";
+		this.category= "";
+		this.employeeName= "";
+		this.employeeAddress= "";
+		this.expenseDescription= "";
+		this.preTaxAmount= "";
+		this.taxName= "";
+		this.taxAmount= "";
 
-}
+	}
+};
