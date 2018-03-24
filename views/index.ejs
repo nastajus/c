@@ -4,6 +4,20 @@
 <body><h1>hi, heads-or-tails?</h1>
 
 <div>
+    <form action="/sub" method="post">
+        <label for="employeeName">employeeName</label>
+        <input type="text" id="employeeName" name="name"/> <br/>
+
+        <label for="employeeAddress">employeeAddress</label>
+        <input type="text" id="employeeAddress" name="name2"/> <br/>
+
+        <input type="submit">
+    </form>
+</div>
+
+<hr>
+
+<div>
     <% employees.forEach((employee) => { %>
     <span>date: </span> <%=  employee.date %> <br/>
     <span>category: </span> <%=  employee.category %> <br/>
