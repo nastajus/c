@@ -1,6 +1,7 @@
 module.exports = {
 
-	model : function() {
+	//model
+	Employee : function() {
 		this.date = "";
 		this.category= "";
 		this.employeeName= "";
@@ -9,8 +10,10 @@ module.exports = {
 		this.preTaxAmount= "";
 		this.taxName= "";
 		this.taxAmount= "";
+	}
+	,
 
-	},
+	employees : [],
 
 
 	// fake posts to simulate a database

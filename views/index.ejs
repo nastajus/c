@@ -4,13 +4,18 @@
 <body><h1>hi, heads-or-tails?</h1>
 asdf
 <div>
-    <!-- loop over blog posts and render them -->
-    <% posts.forEach((post) => { %>
-    <a href="/post/<%= post.id %>">
-        <h4><%= post.title %></h4>
-        <p><%= post.author %></p>
-    </a>
-    <% }) %>
+    <% employees.forEach((employee) => { %>
+    <span>date: </span> <%=  employee.date %> <br/>
+    <span>category: </span> <%=  employee.category %> <br/>
+    <span>employeeName: </span> <%=  employee.employeeName %> <br/>
+    <span>employeeAddress: </span> <%=  employee.employeeAddress %> <br/>
+    <span>expenseDescription: </span> <%=  employee.expenseDescription %> <br/>
+    <span>preTaxAmount: </span> <%=  employee.preTaxAmount %> <br/>
+    <span>taxName: </span> <%=  employee.taxName %> <br/>
+    <span>taxAmount: </span> <%=  employee.taxAmount %> <br/>
+    <hr>
+    <% }); %>
+    
 </div>
 
 </body>
